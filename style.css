@@ -7,6 +7,13 @@
   border: none;
   outline: 2px solid;
   font-size: 0;
+  top: 50px;
+}
+
+#new-grid-btn {
+  position: relative;
+  left:50%;
+
 }
 
 .grid {
@@ -15,8 +22,6 @@
   margin: 0;
   outline: 1px solid #000;
   border: none;
-  height: 60px;
-  width: 60px;
 }
 
 .hovered {
