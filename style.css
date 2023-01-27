@@ -1,0 +1,24 @@
+#container {
+  height: 960px;
+  width: 960px;
+  padding: 0;
+  position: relative;
+  margin: auto;
+  border: none;
+  outline: 2px solid;
+  font-size: 0;
+}
+
+.grid {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid #000;
+  border: none;
+  height: 60px;
+  width: 60px;
+}
+
+.hovered {
+  background-color: #000;
+}

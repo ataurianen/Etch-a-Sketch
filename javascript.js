@@ -1,15 +1,19 @@
 const container = document.getElementById("container");
-container.setAttribute('style', 'display:flex')
-gridSize = 16;
+var gridSize = 16;
 
 //Need to create a 16x16 squard of divs
 
-
-
-count = 0;
-while (count <= gridSize) {
-    const div = document.createElement('div');
-    div.setAttribute('style', 'border:solid; border-width:1px; height:20px; width:20px')
-    container.appendChild(div);
-    count++;
+for (let rows = 0; rows < gridSize; rows++){
+    for (let columns = 0; columns < gridSize; columns++){
+        let div = document.createElement('div');
+        div.classList.add('grid');
+        container.append(div);
+    }
+    document.getElementsByClassName('grid')
 }
+
+const grids = document.querySelectorAll('.grid');
+grids.forEach(grid => grid.addEventListener('mouseover', function(){
+    grid.classList.add('hovered');
+}));
+
